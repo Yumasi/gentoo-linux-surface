@@ -66,4 +66,5 @@ if [ "$NO_BUILD" -eq 0 ]; then
     make -C "$KERNEL_PATH" "$MAKEFLAGS"
     make -C "$KERNEL_PATH" modules_install
     make -C "$KERNEL_PATH" install
+    emerge -1v @module-rebuild
 fi
